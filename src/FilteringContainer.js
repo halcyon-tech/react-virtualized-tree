@@ -76,7 +76,7 @@ export default class FilteringContainer extends React.Component {
     return (
       <div className="tree-filter-container">
         <div className={classNames('tree-lookup-input', {group: !!groups})}>
-          <input value={filterText} onChange={this.handleFilterTextChange} placeholder="Search..." />
+          <input value={filterText} onChange={this.handleFilterTextChange} placeholder="Filter..." />
           <i aria-hidden="true" className="mi mi-11 mi-search" />
           {groups && <GroupRenderer groups={groups} selectedGroup={selectedGroup} onChange={onSelectedGroupChange} />}
         </div>
